@@ -50,7 +50,7 @@ export { Container, containerVariants }
 
 // Section wrapper component for consistent spacing
 export interface SectionProps extends React.HTMLAttributes<HTMLElement> {
-  as?: keyof JSX.IntrinsicElements
+  as?: React.ElementType
   container?: boolean
   containerSize?: ContainerProps["size"]
   spacing?: "sm" | "md" | "lg" | "xl" | "none"
