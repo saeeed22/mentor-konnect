@@ -6,7 +6,6 @@ import { Button } from '@/components/ui/button';
 import { Typography } from '@/components/ui/typography';
 import { Section, Container } from '@/components/ui/container';
 import { Search, ChevronRight, Mail, ArrowLeft, ArrowRight } from 'lucide-react';
-import Image from 'next/image';
 import MentorCard from '@/components/mentorcard';
 import TestimonialCard from '@/components/testimonialcard';
 
