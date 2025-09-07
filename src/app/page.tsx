@@ -23,7 +23,7 @@ const dummyMentors = [
     sessions: 76,
     reviews: 9,
     attendance: 98,
-    experience: 19,
+    experience: 10,
   },
   {
     image: "/images/mentor2.jpg",
