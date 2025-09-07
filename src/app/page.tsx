@@ -152,7 +152,7 @@ const dummyTestimonials = [
 ];
 
 const logos = [
-  '/liftpro.png',
+  'google.png','slack.png','grammarly.png','microsoft.png','paypal.png'
 
 ];
 
@@ -218,7 +218,7 @@ const LandingPage = () => {
                       className="px-6 mx-auto mb-8 text-gray-600 max-w-lg md:text-[1.375rem] md:leading-7 lg:max-w-xl lg:leading-[1.75rem]"
                     >
                       Accelerate your professional growth with 1:1 expert guidance of{' '}
-                      <strong className="text-gray-900">35,013+</strong> mentors in our community.
+                      <strong className="text-gray-900">5,013+</strong> mentors in our community.
                     </Typography>
 
                     <div className="max-w-md mx-auto">
@@ -275,7 +275,7 @@ const LandingPage = () => {
             <Typography
               variant="body"
               className="px-6 mx-auto mb-8 text-gray-900 max-w-lg md:text-[1.375rem] md:leading-7 lg:max-w-xl lg:leading-[1.75rem]">
-              Proven success with 20,000+ top organizations
+              Proven success with 3,200+ top organizations
             </Typography>
           </div>
         </Container>
@@ -283,16 +283,21 @@ const LandingPage = () => {
 
 
       <div className="relative w-full overflow-hidden py-12">
-        <div className="flex marquee-direct whitespace-nowrap">
+  <div className="flex marquee-direct whitespace-nowrap">
+    {[...Array(8)].map((_, repeatIndex) =>
+      logos.map((logo, index) => (
+        <img
+          key={`${repeatIndex}-${index}`}
+          src={logo}
+          alt="Logo"
+          className="h-22 mx-12 w-auto inline-block"
+        />
+      ))
+    )}
+  </div>
+</div>
 
-          {Array(10).fill(null).map((_, index) => (
-            <img key={index} src={logos[0]} alt="Liftpro Logo" className="h-16 mx-8 w-auto" />
-          ))}
-          {Array(10).fill(null).map((_, index) => (
-            <img key={index + 10} src={logos[0]} alt="Liftpro Logo" className="h-16 mx-8 w-auto" />
-          ))}
-        </div>
-      </div>
+
 
       <Section spacing='sm'>
         <div className="flex flex-col items-center text-center">
@@ -445,7 +450,7 @@ const LandingPage = () => {
               Empowered by
             </Typography>
             <Typography variant="display-1" className="text-violet-900 font-extrabold text-center mb-3">
-              200K
+              50+
             </Typography>
             <Typography variant="lead" className="mt-2 text-gray-700 text-center">
               Expert Mentors
@@ -458,7 +463,7 @@ const LandingPage = () => {
               Global community from
             </Typography>
             <Typography variant="display-1" className="text-violet-900 font-extrabold text-center mb-3">
-              150
+              3
             </Typography>
             <Typography variant="lead" className="mt-2 text-gray-700 text-center">
               Countries
@@ -471,7 +476,7 @@ const LandingPage = () => {
               We have built over
             </Typography>
             <Typography variant="display-1" className="text-violet-900 font-extrabold text-center mb-3">
-              20M+
+              200+
             </Typography>
             <Typography variant="lead" className="mt-2 text-gray-700 text-center">
               Connections

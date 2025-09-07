@@ -7,14 +7,14 @@ export default function Footer() {
         <div className="grid grid-cols-1 gap-14 md:grid-cols-[35%_65%]">
           <div className="space-y-4">
             <div className="flex items-center gap-2">
-              <span className="font-bold text-3xl">MentorA</span>
+              <span className="font-bold text-3xl">Mentora</span>
             </div>
             <p className="text-md text-gray-600 max-w-sm">
               On a mission to democratize mentorship for all. Designed and made
-              with ❤️ by MentorKonnect Team
+              with ❤️ by Mentora Team
             </p>
             <p className="text-sm text-gray-500">
-              © Copyright 2025 - MentorKonnect
+              © Copyright 2025 - Mentora
             </p>
           </div>
 
