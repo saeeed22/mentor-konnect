@@ -13,7 +13,7 @@ export default function Header() {
       <div className="mx-auto flex h-16 max-w-8xl items-center justify-between">
         <Link href="/" className="flex items-center gap-2">
           {/* Your logo/brand */}
-          <span className="font-bold text-2xl">MentorA</span>
+          <span className="font-bold text-2xl">Mentora</span>
         </Link>
 
         {/* Desktop Buttons (hidden on screens smaller than 1000px) */}
