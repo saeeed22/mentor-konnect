@@ -22,7 +22,7 @@ const dummyMentors = [
     company: "Omaha Victor...",
     sessions: 76,
     reviews: 9,
-    attendance: 98,
+    attendance: 95,
     experience: 10,
   },
   {
